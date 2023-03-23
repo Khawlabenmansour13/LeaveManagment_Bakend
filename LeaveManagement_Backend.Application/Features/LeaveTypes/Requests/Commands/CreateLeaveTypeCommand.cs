@@ -6,9 +6,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace LeaveManagement_Backend.Application.Features.LeaveTypes.Requests.Queries
+namespace LeaveManagement_Backend.Application.Features.LeaveTypes.Requests.Commands
 {
-    public class GetLeaveTypeListRequest : IRequest<List<CreateLeaveTypeDto>>
+    public class CreateLeaveTypeRequest : IRequest<int>
     {
+        public CreateLeaveTypeDto LeaveTypeDto { get; set; }
     }
 }

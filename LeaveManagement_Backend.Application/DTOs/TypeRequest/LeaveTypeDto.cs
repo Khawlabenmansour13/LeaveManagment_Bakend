@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace LeaveManagement_Backend.Application.DTOs.TypeRequest
 {
-    public class LeaveTypeDto : BaseDto
+    public class CreateLeaveTypeDto : BaseDto
     {
         public string Name { get; set; }
         public int DefaultDays { get; set; }
