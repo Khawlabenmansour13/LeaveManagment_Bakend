@@ -1,5 +1,6 @@
 ﻿using LeaveManagement_Backend.Application.DTOs.Common;
-using LeaveManagement_Backend.Domaine.Entities;
+using LeaveManagement_Backend.Application.DTOs.TypeRequest;
+using LeaveManagement_Backend.Domain.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,10 +13,10 @@ namespace LeaveManagement_Backend.Application.DTOs.LeaveAllocation
         public class LeaveAllocationDto : BaseDto
         {
             public int NumberOfDays { get; set; }
-            public LeaveType LeaveType { get; set; }
+            public LeaveTypeDto LeaveType { get; set; }
             public int LeaveTypeId { get; set; }
             public int Period { get; set; }
-            ///spublic string EmployeeId { get; set; }
+            ///public string EmployeeId { get; set; }
         }
     
 }

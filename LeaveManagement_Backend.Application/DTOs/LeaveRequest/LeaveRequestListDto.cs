@@ -1,4 +1,5 @@
 ﻿using LeaveManagement_Backend.Application.DTOs.Common;
+using LeaveManagement_Backend.Application.DTOs.LeaveType;
 using LeaveManagement_Backend.Application.DTOs.TypeRequest;
 using System;
 using System.Collections.Generic;
@@ -10,7 +11,7 @@ namespace LeaveManagement_Backend.Application.DTOs.LeaveRequest
 {
     public class LeaveRequestListDto : BaseDto
     {
-        public CreateLeaveTypeDto LeaveType { get; set; }
+        public LeaveTypeDto LeaveType { get; set; }
         public DateTime DateRequested { get; set; }
         public bool? Approved { get; set; }
     }

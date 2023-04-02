@@ -85,14 +85,14 @@
           "buildTransitive/net6.0/_._": {}
         }
       },
-      "LeaveManagement_Backend.Domaine/1.0.0": {
+      "LeaveManagement_Backend.Domain/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "compile": {
-          "bin/placeholder/LeaveManagement_Backend.Domaine.dll": {}
+          "bin/placeholder/LeaveManagement_Backend.Domain.dll": {}
         },
         "runtime": {
-          "bin/placeholder/LeaveManagement_Backend.Domaine.dll": {}
+          "bin/placeholder/LeaveManagement_Backend.Domain.dll": {}
         }
       }
     }
@@ -254,16 +254,16 @@
         "useSharedDesignerContext.txt"
       ]
     },
-    "LeaveManagement_Backend.Domaine/1.0.0": {
+    "LeaveManagement_Backend.Domain/1.0.0": {
       "type": "project",
-      "path": "../LeaveManagement_Backend.Domaine/LeaveManagement_Backend.Domaine.csproj",
-      "msbuildProject": "../LeaveManagement_Backend.Domaine/LeaveManagement_Backend.Domaine.csproj"
+      "path": "../LeaveManagement_Backend.Domaine/LeaveManagement_Backend.Domain.csproj",
+      "msbuildProject": "../LeaveManagement_Backend.Domaine/LeaveManagement_Backend.Domain.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
       "AutoMapper >= 12.0.1",
-      "LeaveManagement_Backend.Domaine >= 1.0.0",
+      "LeaveManagement_Backend.Domain >= 1.0.0",
       "MediatR.Extensions.Microsoft.DependencyInjection >= 11.1.0"
     ]
   },
@@ -294,8 +294,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\MSI\\source\\repos\\LeaveManagement_Backend\\LeaveManagement_Backend.Domaine\\LeaveManagement_Backend.Domaine.csproj": {
-              "projectPath": "C:\\Users\\MSI\\source\\repos\\LeaveManagement_Backend\\LeaveManagement_Backend.Domaine\\LeaveManagement_Backend.Domaine.csproj"
+            "C:\\Users\\MSI\\source\\repos\\LeaveManagement_Backend\\LeaveManagement_Backend.Domaine\\LeaveManagement_Backend.Domain.csproj": {
+              "projectPath": "C:\\Users\\MSI\\source\\repos\\LeaveManagement_Backend\\LeaveManagement_Backend.Domaine\\LeaveManagement_Backend.Domain.csproj"
             }
           }
         }

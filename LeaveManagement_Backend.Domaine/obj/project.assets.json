@@ -13,9 +13,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\MSI\\source\\repos\\LeaveManagement_Backend\\LeaveManagement_Backend.Domaine\\LeaveManagement_Backend.Domaine.csproj",
-      "projectName": "LeaveManagement_Backend.Domaine",
-      "projectPath": "C:\\Users\\MSI\\source\\repos\\LeaveManagement_Backend\\LeaveManagement_Backend.Domaine\\LeaveManagement_Backend.Domaine.csproj",
+      "projectUniqueName": "C:\\Users\\MSI\\source\\repos\\LeaveManagement_Backend\\LeaveManagement_Backend.Domaine\\LeaveManagement_Backend.Domain.csproj",
+      "projectName": "LeaveManagement_Backend.Domain",
+      "projectPath": "C:\\Users\\MSI\\source\\repos\\LeaveManagement_Backend\\LeaveManagement_Backend.Domaine\\LeaveManagement_Backend.Domain.csproj",
       "packagesPath": "C:\\Users\\MSI\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\MSI\\source\\repos\\LeaveManagement_Backend\\LeaveManagement_Backend.Domaine\\obj\\",
       "projectStyle": "PackageReference",

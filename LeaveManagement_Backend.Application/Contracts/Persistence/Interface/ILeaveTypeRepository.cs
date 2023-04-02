@@ -1,4 +1,4 @@
-﻿using LeaveManagement_Backend.Domaine.Entities;
+﻿using LeaveManagement_Backend.Domain.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,5 +9,6 @@ namespace LeaveManagement_Backend.Application.Contracts.Persistence.Interfaces
 {
     public interface ILeaveTypeRepository : IGenericRepository<LeaveType>
     {
+        Task Update(Task<LeaveType> leaveType);
     }
 }

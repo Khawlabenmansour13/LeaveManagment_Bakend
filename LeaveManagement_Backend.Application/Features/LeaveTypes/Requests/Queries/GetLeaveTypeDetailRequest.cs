@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace LeaveManagement_Backend.Application.Features.LeaveTypes.Requests.Queries
 {
-    public class GetLeaveTypeDetailRequest : IRequest<CreateLeaveTypeDto>
+    public class GetLeaveTypeDetailRequest : IRequest<LeaveTypeDto>
     {
         public int Id { get; set; }
     }

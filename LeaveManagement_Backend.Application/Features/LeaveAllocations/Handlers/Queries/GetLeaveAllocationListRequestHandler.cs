@@ -3,7 +3,7 @@ using LeaveManagement_Backend.Application.Contracts.Persistence.Interfaces;
 using LeaveManagement_Backend.Application.DTOs.LeaveAllocation;
 using LeaveManagement_Backend.Application.DTOs.TypeRequest;
 using LeaveManagement_Backend.Application.Features.LeaveAllocations.Requests.Queries;
-using LeaveManagement_Backend.Domaine.Entities;
+using LeaveManagement_Backend.Domain.Entities;
 using MediatR;
 using System;
 using System.Collections.Generic;

@@ -5,11 +5,11 @@ VisualStudioVersion = 17.5.33424.131
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LeaveManagement_Backend", "LeaveManagement_Backend\LeaveManagement_Backend.csproj", "{8CF0FEA2-AD12-4B86-A366-AE9CC14D451F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeaveManagement_Backend.Domaine", "LeaveManagement_Backend.Domaine\LeaveManagement_Backend.Domaine.csproj", "{81200655-BBF5-445C-9AF4-E62D93F4ACC3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LeaveManagement_Backend.Domain", "LeaveManagement_Backend.Domaine\LeaveManagement_Backend.Domain.csproj", "{81200655-BBF5-445C-9AF4-E62D93F4ACC3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeaveManagement_Backend.Application", "LeaveManagement_Backend.Application\LeaveManagement_Backend.Application.csproj", "{C3A74A7C-1EC1-4F5C-9EA8-F8E43C5AB1DF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LeaveManagement_Backend.Application", "LeaveManagement_Backend.Application\LeaveManagement_Backend.Application.csproj", "{C3A74A7C-1EC1-4F5C-9EA8-F8E43C5AB1DF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeaveManagement_Backend.Infrastructure", "LeaveManagement_Backend.Infrastructure\LeaveManagement_Backend.Infrastructure.csproj", "{0DF4DFAF-CA5C-4A17-BEF4-FCB7FA5206E1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LeaveManagement_Backend.Infrastructure", "LeaveManagement_Backend.Infrastructure\LeaveManagement_Backend.Infrastructure.csproj", "{0DF4DFAF-CA5C-4A17-BEF4-FCB7FA5206E1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

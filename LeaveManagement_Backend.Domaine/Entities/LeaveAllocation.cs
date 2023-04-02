@@ -1,11 +1,11 @@
-﻿using LeaveManagement_Backend.Domaine.Common;
+﻿using LeaveManagement_Backend.Domain.Common;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace LeaveManagement_Backend.Domaine.Entities
+namespace LeaveManagement_Backend.Domain.Entities
 {
     public class LeaveAllocation : BaseDomainEntity
     {

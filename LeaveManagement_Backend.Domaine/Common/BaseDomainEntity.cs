@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace LeaveManagement_Backend.Domaine.Common
+namespace LeaveManagement_Backend.Domain.Common
 {
-    public class BaseDomainEntity
+    public abstract  class BaseDomainEntity
     {
         public int Id { get; set; }
         public DateTime DateCreated { get; set; }

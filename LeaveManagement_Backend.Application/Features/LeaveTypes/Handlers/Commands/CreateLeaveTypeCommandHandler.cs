@@ -1,7 +1,7 @@
 ﻿using AutoMapper;
 using LeaveManagement_Backend.Application.Contracts.Persistence.Interfaces;
 using LeaveManagement_Backend.Application.Features.LeaveTypes.Requests.Commands;
-using LeaveManagement_Backend.Domaine.Entities;
+using LeaveManagement_Backend.Domain.Entities;
 using MediatR;
 using System;
 using System.Collections.Generic;
@@ -11,7 +11,7 @@ using System.Threading.Tasks;
 
 namespace LeaveManagement_Backend.Application.Features.LeaveTypes.Handlers.Commands
 {
-    public class CreateLeaveTypeCommandHandler : IRequestHandler<CreateLeaveTypeRequest, int>
+    public class CreateLeaveTypeCommandHandler : IRequestHandler<CreateLeaveTypeCommand, int>
     {
         private readonly ILeaveTypeRepository _leaveTypeRepository;
         private readonly IMapper _mapper;
@@ -20,7 +20,7 @@ namespace LeaveManagement_Backend.Application.Features.LeaveTypes.Handlers.Comma
             _leaveTypeRepository = leaveTypeRepository;
             _mapper = mapper;
         }
-        public async Task<int> Handle(CreateLeaveTypeRequest request , CancellationToken cancellationToken)
+        public async Task<int> Handle(CreateLeaveTypeCommand request , CancellationToken cancellationToken)
         {
             var leaveType = _mapper.Map<LeaveType>(request.LeaveTypeDto);
             leaveType = await _leaveTypeRepository.Add(leaveType);
