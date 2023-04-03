@@ -1,5 +1,6 @@
 ﻿using FluentValidation;
 using LeaveManagement_Backend.Application.Contracts.Persistence.Interfaces;
+using LeaveManagement_Backend.Application.DTOs.LeaveType.Validators;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,26 +11,12 @@ namespace LeaveManagement_Backend.Application.DTOs.LeaveRequest.Validators
 {
     public class CreateLeaveRequestDtoValidator : AbstractValidator<CreateLeaveRequestDto>
     {
-        private ILeaveTypeRepository _leaveTypeRepository;
+        private readonly ILeaveTypeRepository _leaveTypeRepository;
+
         public CreateLeaveRequestDtoValidator(ILeaveTypeRepository leaveTypeRepository)
         {
-
             _leaveTypeRepository = leaveTypeRepository;
-            RuleFor(p => p.StartDate)
-                .LessThan(DateTime.Now).WithMessage("{ProprietyName} must be before {Comparisonvalue}");
-               
-            RuleFor(p => p.EndDate)
-               
-                .GreaterThan(p => p.StartDate).WithMessage("{ProprietyName} must be before {Comparisonvalue}");
-
-            RuleFor(p => p.LeaveTypeId)
-                   .GreaterThan(0)
-                   .MustAsync(async (id, token) =>
-                   {
-                       var leaveTypeExists = await _leaveTypeRepository.Exists(id);
-                       return !leaveTypeExists;
-                   })
-                   .WithMessage("{PropertyName} does not exist");
+             Include(new ILeaveRequestDtoValidator(_leaveTypeRepository));
         }
     }
 }

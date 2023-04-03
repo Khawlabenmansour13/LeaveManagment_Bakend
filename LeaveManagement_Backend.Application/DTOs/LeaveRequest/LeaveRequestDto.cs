@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace LeaveManagement_Backend.Application.DTOs.LeaveRequest
 {
-    public class LeaveRequestDto : BaseDto
+    public class LeaveRequestDto : BaseDto, ILeaveRequestDto
     {
 
         public DateTime StartDate { get; set; }

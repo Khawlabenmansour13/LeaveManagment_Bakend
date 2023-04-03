@@ -10,24 +10,12 @@ namespace LeaveManagement_Backend
     
     .Application.DTOs.LeaveType.Validators
 {
-    public class CreateLeaveTypeDtoValidator : AbstractValidator<CreateLeaveTypeDto>
+    public class CreateLeaveTypeDtoValidator : AbstractValidator<LeaveTypeDto>
     {
         public CreateLeaveTypeDtoValidator()
         {
-            RuleFor(p => p.Name)
-                .NotEmpty().WithMessage("{ProprietyName} is required.")
-                .NotNull()
-                .MaximumLength(50).WithMessage("{ProprietyName} must not exced 50 character.");
-            RuleFor(p => p.DefaultDays)
-                .NotEmpty().WithMessage("{ProprietyName} is required.")
-                .GreaterThan(0).WithMessage("{ProprietyName} must be at least 1.")
-                .LessThan(100).WithMessage("{ProprietyName} must be less than 100.");
-
+            Include(new ILeaveTypeDtoValidator());
         }
 
-        public Task ValidateAsync(LeaveTypeDto leaveTypeDto)
-        {
-            throw new NotImplementedException();
-        }
-    }
+     }
 }
