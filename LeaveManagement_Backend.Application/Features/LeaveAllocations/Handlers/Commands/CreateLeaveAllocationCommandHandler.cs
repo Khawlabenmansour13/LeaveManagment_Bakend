@@ -3,6 +3,7 @@ using LeaveManagement_Backend.Application.Contracts.Persistence.Interfaces;
 using LeaveManagement_Backend.Application.DTOs.LeaveAllocation;
 using LeaveManagement_Backend.Application.Features.LeaveAllocations.Requests.Commands;
 using LeaveManagement_Backend.Application.Features.LeaveTypes.Requests.Commands;
+using LeaveManagement_Backend.Domain.Entities;
 using LeaveManagement_Backend.Domaine.Entities;
 using MediatR;
 using System;

@@ -11,10 +11,10 @@ namespace LeaveManagement_Backend.Application.Features.LeaveRequests.Requests.Co
     public class UpdateLeaveRequestCommand : IRequest<Unit>
 
     {
-        internal readonly object LeaveRequestDto;
-
-        public ChangeLeaveRequestApprovalDto ChangeLeaveRequestApproval { get; set; }
-        public LeaveRequestDto LeaveRequest { get; internal set; }
-        public object ChangeLeaveRequestApprovalDto { get; internal set; }
+        public int Id { get; set; }
+        public LeaveRequestDto LeaveRequestDto { get; internal set; }
+        public ChangeLeaveRequestApprovalDto ChangeLeaveRequestApprovalDto { get; set; }
+       
+       
     }
 }
