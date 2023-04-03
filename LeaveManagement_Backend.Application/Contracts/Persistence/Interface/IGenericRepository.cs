@@ -13,7 +13,6 @@ namespace LeaveManagement_Backend.Application.Contracts.Persistence.Interfaces
         Task<T> Add(T entity);
         Task<bool> Exists(int id);
         Task Update(T entity);
-
         Task Delete(T entity);
     }
 }
