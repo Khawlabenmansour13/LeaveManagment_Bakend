@@ -7,10 +7,12 @@ using System.Threading.Tasks;
 
 namespace LeaveManagement_Backend.Application.DTOs.LeaveType
 {
-    public class CreateLeaveTypeDto : BaseDto
+    public class CreateLeaveTypeDto : ILeaveTypeDto
 
     {
         public string Name { get; set; }
         public int DefaultDays { get; set; }
+     
     }
 }
+

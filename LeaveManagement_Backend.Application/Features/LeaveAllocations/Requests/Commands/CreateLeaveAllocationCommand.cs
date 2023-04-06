@@ -1,5 +1,5 @@
 ﻿using LeaveManagement_Backend.Application.DTOs.LeaveAllocation;
-using LeaveManagement_Backend.Application.DTOs.TypeRequest;
+
 using MediatR;
 using System;
 using System.Collections.Generic;

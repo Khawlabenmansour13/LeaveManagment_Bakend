@@ -12,7 +12,7 @@ namespace LeaveManagement_Backend.Application.Features.LeaveRequests.Requests.Co
 
     {
         public int Id { get; set; }
-        public LeaveRequestDto LeaveRequestDto { get; internal set; }
+        public UpdateLeaveRequestDto LeaveRequestDto { get; set; }
         public ChangeLeaveRequestApprovalDto ChangeLeaveRequestApprovalDto { get; set; }
        
        

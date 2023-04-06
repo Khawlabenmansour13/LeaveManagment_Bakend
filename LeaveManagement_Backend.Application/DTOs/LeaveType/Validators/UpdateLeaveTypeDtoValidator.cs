@@ -1,5 +1,5 @@
 ﻿using FluentValidation;
-using LeaveManagement_Backend.Application.DTOs.TypeRequest;
+using LeaveManagement_Backend.Application.DTOs.LeaveType;
 using System;
 using System.Collections.Generic;
 using System.Linq;

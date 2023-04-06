@@ -1,5 +1,5 @@
 ﻿using LeaveManagement_Backend.Application.DTOs.LeaveRequest;
-using LeaveManagement_Backend.Application.DTOs.TypeRequest;
+using LeaveManagement_Backend.Application.Response;
 using MediatR;
 using System;
 using System.Collections.Generic;
@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace LeaveManagement_Backend.Application.Features.LeaveRequests.Requests.Commands
 {
-    public class CreateLeaveRequestCommand : IRequest<int>
+    public class CreateLeaveRequestCommand : IRequest<BaseCommandResponse>
     {
         public CreateLeaveRequestDto LeaveRequestDto { get; set; }
     }

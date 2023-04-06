@@ -1,4 +1,4 @@
-﻿using LeaveManagement_Backend.Application.DTOs.TypeRequest;
+﻿using LeaveManagement_Backend.Application.DTOs.LeaveType;
 using MediatR;
 using System;
 using System.Collections.Generic;

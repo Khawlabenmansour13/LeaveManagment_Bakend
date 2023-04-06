@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace LeaveManagement_Backend.Application.DTOs.TypeRequest
+namespace LeaveManagement_Backend.Application.DTOs.LeaveType
 {
     public interface ILeaveTypeDto
     {

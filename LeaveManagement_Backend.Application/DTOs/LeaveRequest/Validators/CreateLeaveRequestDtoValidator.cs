@@ -16,7 +16,7 @@ namespace LeaveManagement_Backend.Application.DTOs.LeaveRequest.Validators
         public CreateLeaveRequestDtoValidator(ILeaveTypeRepository leaveTypeRepository)
         {
             _leaveTypeRepository = leaveTypeRepository;
-             Include(new ILeaveRequestDtoValidator(_leaveTypeRepository));
+            Include(new ILeaveRequestDtoValidator(_leaveTypeRepository));
         }
     }
 }
