@@ -1,9 +1,7 @@
 ﻿using AutoMapper;
 using FluentValidation;
-using HR.LeaveManagement.Application.DTOs.LeaveType.Validators;
 using LeaveManagement_Backend.Application.Contracts.Persistence.Interfaces;
 using LeaveManagement_Backend.Application.DTOs.LeaveRequest.Validators;
-using LeaveManagement_Backend.Application.DTOs.LeaveType.Validators;
 using LeaveManagement_Backend.Application.Features.LeaveRequests.Requests.Commands;
 using LeaveManagement_Backend.Application.Features.LeaveTypes.Requests.Commands;
 using LeaveManagement_Backend.Application.Response;
@@ -36,7 +34,7 @@ namespace LeaveManagement_Backend.Application.Features.LeaveRequests.Handlers.Co
         public async Task<BaseCommandResponse> Handle(CreateLeaveRequestCommand request, CancellationToken cancellationToken)
         {
             var response = new BaseCommandResponse();
-            var validator = new CreateLeaveTypeDtoValidator();
+            var validator = new CreateLeaveRequestDtoValidator(_leaveTypeRepository);
             var validationResult = await validator.ValidateAsync(request.LeaveRequestDto);
 
              if (validationResult.IsValid == false)

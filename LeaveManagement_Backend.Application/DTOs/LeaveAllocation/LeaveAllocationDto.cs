@@ -1,5 +1,5 @@
 ﻿using LeaveManagement_Backend.Application.DTOs.Common;
-using LeaveManagement_Backend.Application.DTOs.TypeRequest;
+using LeaveManagement_Backend.Application.DTOs.LeaveType;
 using LeaveManagement_Backend.Domain.Entities;
 using System;
 using System.Collections.Generic;

@@ -1,11 +1,7 @@
 ﻿using FluentValidation;
-using LeaveManagement_Backend.Application.DTOs.LeaveType;
 using System;
 using System.Collections.Generic;
 using System.Text;
-using LeaveManagement_Backend.Application.Contracts.Persistence.Interfaces;
-
-
 namespace LeaveManagement_Backend.Application.DTOs.LeaveType.Validators
 {
     public class CreateLeaveTypeDtoValidator : AbstractValidator<CreateLeaveTypeDto>

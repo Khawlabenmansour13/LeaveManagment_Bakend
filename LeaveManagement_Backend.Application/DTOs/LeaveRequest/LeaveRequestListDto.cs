@@ -1,6 +1,5 @@
 ﻿using LeaveManagement_Backend.Application.DTOs.Common;
 using LeaveManagement_Backend.Application.DTOs.LeaveType;
-using LeaveManagement_Backend.Application.DTOs.TypeRequest;
 using System;
 using System.Collections.Generic;
 using System.Linq;
