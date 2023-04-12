@@ -17,4 +17,5 @@ namespace LeaveManagement_Backend.Application.Contracts.Persistence.Interfaces
         Task<LeaveAllocation> GetUserAllocations(string userId, int leaveTypeId);
         Task Update(Task<LeaveAllocation> leaveAllocation);
     }
+
 }

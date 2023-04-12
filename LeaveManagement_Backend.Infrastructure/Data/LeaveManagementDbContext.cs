@@ -1,4 +1,5 @@
-﻿using LeaveManagement_Backend.Domain.Entities;
+﻿using LeaveManagement_Backend.Domain.Common;
+using LeaveManagement_Backend.Domain.Entities;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -16,7 +17,20 @@ namespace LeaveManagement_Backend.Infrastructure.Data
         }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.ApplyConfigurationsFromAssembly(typeof(LeaveManagementDbContext))
+            modelBuilder.ApplyConfigurationsFromAssembly(typeof(LeaveManagementDbContext).Assembly);
+        }
+        public override Task<int> SaveChangesAsync (CancellationToken cancellationToken = default)
+        {
+            foreach ( var entry in ChangeTracker.Entries<BaseDomainEntity>())
+            {
+                entry.Entity.LastModifiedDate = DateTime.UtcNow;  
+                if (entry.State != EntityState.Added)
+                {
+                    entry.Entity.DateCreated = DateTime.UtcNow; 
+                }
+
+            }
+            return base.SaveChangesAsync (cancellationToken);
         }
         public DbSet<LeaveRequest> LeaveRequests { get; set; }
         public DbSet<LeaveType> LeaveTypes { get; set; }

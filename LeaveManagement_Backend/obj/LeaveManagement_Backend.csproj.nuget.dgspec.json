@@ -4,6 +4,231 @@
     "C:\\Users\\MSI\\source\\repos\\LeaveManagement_Backend\\LeaveManagement_Backend\\LeaveManagement_Backend.csproj": {}
   },
   "projects": {
+    "C:\\Users\\MSI\\source\\repos\\LeaveManagement_Backend\\LeaveManagement_Backend.Application\\LeaveManagement_Backend.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\MSI\\source\\repos\\LeaveManagement_Backend\\LeaveManagement_Backend.Application\\LeaveManagement_Backend.Application.csproj",
+        "projectName": "LeaveManagement_Backend.Application",
+        "projectPath": "C:\\Users\\MSI\\source\\repos\\LeaveManagement_Backend\\LeaveManagement_Backend.Application\\LeaveManagement_Backend.Application.csproj",
+        "packagesPath": "C:\\Users\\MSI\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\MSI\\source\\repos\\LeaveManagement_Backend\\LeaveManagement_Backend.Application\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\MSI\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\MSI\\source\\repos\\LeaveManagement_Backend\\LeaveManagement_Backend.Domaine\\LeaveManagement_Backend.Domain.csproj": {
+                "projectPath": "C:\\Users\\MSI\\source\\repos\\LeaveManagement_Backend\\LeaveManagement_Backend.Domaine\\LeaveManagement_Backend.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            },
+            "FluentValidation.DependencyInjectionExtensions": {
+              "target": "Package",
+              "version": "[11.5.1, )"
+            },
+            "MediatR.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[11.1.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\MSI\\source\\repos\\LeaveManagement_Backend\\LeaveManagement_Backend.Domaine\\LeaveManagement_Backend.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\MSI\\source\\repos\\LeaveManagement_Backend\\LeaveManagement_Backend.Domaine\\LeaveManagement_Backend.Domain.csproj",
+        "projectName": "LeaveManagement_Backend.Domain",
+        "projectPath": "C:\\Users\\MSI\\source\\repos\\LeaveManagement_Backend\\LeaveManagement_Backend.Domaine\\LeaveManagement_Backend.Domain.csproj",
+        "packagesPath": "C:\\Users\\MSI\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\MSI\\source\\repos\\LeaveManagement_Backend\\LeaveManagement_Backend.Domaine\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\MSI\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\MSI\\source\\repos\\LeaveManagement_Backend\\LeaveManagement_Backend.Infrastructure\\LeaveManagement_Backend.Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\MSI\\source\\repos\\LeaveManagement_Backend\\LeaveManagement_Backend.Infrastructure\\LeaveManagement_Backend.Infrastructure.csproj",
+        "projectName": "LeaveManagement_Backend.Infrastructure",
+        "projectPath": "C:\\Users\\MSI\\source\\repos\\LeaveManagement_Backend\\LeaveManagement_Backend.Infrastructure\\LeaveManagement_Backend.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\MSI\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\MSI\\source\\repos\\LeaveManagement_Backend\\LeaveManagement_Backend.Infrastructure\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\MSI\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\MSI\\source\\repos\\LeaveManagement_Backend\\LeaveManagement_Backend.Application\\LeaveManagement_Backend.Application.csproj": {
+                "projectPath": "C:\\Users\\MSI\\source\\repos\\LeaveManagement_Backend\\LeaveManagement_Backend.Application\\LeaveManagement_Backend.Application.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "EmailSender": {
+              "target": "Package",
+              "version": "[1.0.1, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.11, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.11, )"
+            },
+            "Microsoft.EntityFrameworkCore.Relational": {
+              "target": "Package",
+              "version": "[6.0.11, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.11, )"
+            },
+            "Microsoft.Extensions.Options.ConfigurationExtensions": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[6.0.7, )"
+            },
+            "SendGrid": {
+              "target": "Package",
+              "version": "[9.28.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
     "C:\\Users\\MSI\\source\\repos\\LeaveManagement_Backend\\LeaveManagement_Backend\\LeaveManagement_Backend.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -27,7 +252,11 @@
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\MSI\\source\\repos\\LeaveManagement_Backend\\LeaveManagement_Backend.Infrastructure\\LeaveManagement_Backend.Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\MSI\\source\\repos\\LeaveManagement_Backend\\LeaveManagement_Backend.Infrastructure\\LeaveManagement_Backend.Infrastructure.csproj"
+              }
+            }
           }
         },
         "warningProperties": {

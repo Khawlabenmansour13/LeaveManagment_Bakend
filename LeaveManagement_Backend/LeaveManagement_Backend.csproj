@@ -12,4 +12,8 @@
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\LeaveManagement_Backend.Infrastructure\LeaveManagement_Backend.Infrastructure.csproj" />
+  </ItemGroup>
+
 </Project>
